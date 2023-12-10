@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "analysis-reporting-assessment"
+version = "0.1.0"
+description = ""
+authors = ["Alejandro Otero <lexotero@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "analysis_reporting_assessment"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.2"
+pandas = "^2.1.4"
+jupyter = "^1.0.0"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.0"
+scipy = "^1.11.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
