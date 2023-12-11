@@ -107,35 +107,97 @@ ill and healthy patients.
 \end{figure}
 
 
-
 \subsection{Frequency Analysis}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-01-gender-vessels.png}
+In this section we show the result of the frequency analysis of the categorical features. This analysis allows us to
+better understand the dataset and to speculate about correlation between each feature and the presence of
+heart disease.
 
-\includegraphics[width=0.8\linewidth]{media/frequency-02-agegroup-vessels.png}
+\subsubsection{Feature: Number of major vessels}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-03-gender-slope.png}
+\begin{figure}
+    \caption{Distribution of the number of major vessels visible grouping by gender}\label{frequency-vessel-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-01-gender-vessels.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-04-agegroup-slope.png}
+\begin{figure}
+    \caption{Distribution of the number of major vessels visible grouping by age groups}\label{frequency-vessel-age-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-02-agegroup-vessels.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-05-gender-ecg.png}
+\subsubsection{Feature: Slope}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-06-agegroup-ecg.png}
+\begin{figure}
+    \caption{Distribution of slope classification grouping by gender}\label{frequency-slope-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-03-gender-slope.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-07-gender-bloodsugar.png}
+\begin{figure}
+    \caption{Distribution of slope classification grouping by age groups}\label{frequency-slope-agegroup-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-04-agegroup-slope.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-08-agegroup-bloodsugar.png}
+\subsubsection{Feature: Resting electrocardiogram results}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-09-gender-paintype.png}
+\begin{figure}
+    \caption{Distribution of resting ECG results classification grouping by gender}\label{frequency-ecg-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-05-gender-ecg.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-10-agegroup-paintype.png}
+\begin{figure}
+    \caption{Distribution of resting ECG results classification grouping by age groups}\label{frequency-ecg-agegroup-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-06-agegroup-ecg.png}
+\end{figure}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-11-gender-exerciseangina.png}
+\subsubsection{Feature: Fasting blood sugar}
 
-\includegraphics[width=0.8\linewidth]{media/frequency-12-agegroup-exerciseangina.png}
+\begin{figure}
+    \caption{Distribution of blood sugar level classification grouping by gender}\label{frequency-bloodsugar-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-07-gender-bloodsugar.png}
+\end{figure}
+
+\begin{figure}
+    \caption{Distribution of blood sugar level classification grouping by age groups}\label{frequency-bloodsugar-agegroup-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-08-agegroup-bloodsugar.png}
+\end{figure}
+
+\subsubsection{Feature: Chest pain type}
+
+\begin{figure}
+    \caption{Distribution of chest pain type classification grouping by gender}\label{frequency-paintype-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-09-gender-paintype.png}
+\end{figure}
+
+\begin{figure}
+    \caption{Distribution of chest pain type classification grouping by age groups}\label{frequency-paintype-agegroup-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-10-agegroup-paintype.png}
+\end{figure}
+
+\subsubsection{Feature: Exercise-induced angina}
+
+\begin{figure}
+    \caption{Distribution of exercise-induced angina grouping by gender}\label{frequency-exerciseangina-gender-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-11-gender-exerciseangina.png}
+\end{figure}
+
+\begin{figure}
+    \caption{Distribution of exercise-induced angina grouping by age groups}\label{frequency-exerciseangina-agegroup-percent}
+    \centering
+    \includegraphics[width=\linewidth]{media/frequency-12-agegroup-exerciseangina.png}
+\end{figure}
 
 \subsection{Data spread and variability}
-
 
 \includegraphics[width=0.8\linewidth]{media/boxplot-01-agegroup-gender-oldpeak.png}
 
