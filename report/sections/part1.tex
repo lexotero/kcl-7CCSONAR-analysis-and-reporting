@@ -127,9 +127,32 @@ One of the first analysis we must carry out against the dataset is a demographic
 the demographic distribution so that we can identify potential biases (e.g. age bias and gender bias).
 
 It is well known that, in the past, medical studies had a high incidence of gender bias, particularly in cardiovascular
-research \cite{GenderBiasCardiovascularResearch}.
+research \cite{GenderBiasCardiovascularResearch}. For this reason, we must make sure that the dataset population
+is well balanced to ensure that our prediction model will work for any age and gender.
+
+To meet this objective we used frequency analysis. By grouping patients by age and gender and calculating frequency
+distributions, we can quickly identify unbalanced populations (of a particular gender or age group).
 
 \subsubsection{Sub-objective 2: Identify potential predictors in categorical data}
 
+Another objective of our analysis is to identify potential predictors of heart disease in categorical data. This will
+increase our knowledge of the field, and help us direct further research to specific features. In particular, we want
+to be able to identify correlations between disease and categorical values.
+
+Because of the nature of categorical data, the best analysis methodology in this case is again frequency analysis.
+We group the records by age group and gender and provide percentage values for each of the features for the
+identified groups.
+
 \subsubsection{Sub-objective 3: Identify potential predictors in numerical data}
+
+Lastly, we want to identify potential predictors of heart disease in the numerical data, again increasing our
+knowledge of the field, and highlighting the features that have the highest correlation to the presence of
+heart disease.
+
+In this case, because we are dealing with numeric data, we can apply measures of central tendency, and measures
+of dispersion. For these features, we produce box plots and tables with mean, median, percentiles, min, max, and
+standard deviation.
+
+Finally, we also generate a correlation matrix (which also includes categorical values) to properly calculate
+any potential correlation. To help reading this correlation matrix, we use a heatmap and scatter diagrams.
 
