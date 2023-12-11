@@ -76,14 +76,29 @@ and confirms that indeed the \textbf{distribution is balanced}.
     \includegraphics[width=\linewidth]{media/demographics-04-gender-target-percentage.png}
 \end{figure}
 
+In the next section we will analyse the age demographics of the dataset, but we must also ensure that
+there is an even number of patients of each gender across the different age groups. 
+
+Figure \ref{demographics-gender-agegroup-count} shows the number of patients in each age group grouped by
+gender. Although there are small variations between the female and the male populations, the
+\textbf{distribution is balanced, there are roughly an equal number of patients across each age group when
+grouping by gender.}
 
 \begin{figure}
-    \caption{Distribution of genders across age groups}\label{demographics-gender-agegroup-count}
+    \caption{Number of patients of each gender across age groups}\label{demographics-gender-agegroup-count}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-02-gender-age.png}
 \end{figure}
 
 \subsubsection{Age demographics}
+
+In the same way we have checked the gender demographics, we must also validate the age demographics to ensure that
+our result prediction model produces equally accurate results across the age spectrum.
+
+Figure \ref{demographics-agegroup-target-percent} shows the distribution of patients of each age group grouping by class
+(with and without heart disease). It is visually apparent that this distribution is also consistent across ages,
+\textbf{presumably the recruitment criteria ensured that there would be a balanced distribution across genders and ages} for both
+ill and healthy patients.
 
 \begin{figure}
     \caption{Distribution of patients of each age group grouped by class}\label{demographics-agegroup-target-percent}
