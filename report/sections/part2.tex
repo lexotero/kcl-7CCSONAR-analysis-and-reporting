@@ -115,6 +115,16 @@ heart disease.
 
 \subsubsection{Feature: Number of major vessels}
 
+This feature represents the number of major vessels visible through a fluoroscopy. Research \cite{Fluoroscopy} shows that
+there is a strong correlation between the number of coloured vessels and the presence of cardiovascular diseases.
+The fewer visible vessels, the most likely it is that the patient suffers from a heart condition.
+
+Nonetheless, our data seems to suggest the opposite. Figures \ref{frequency-vessel-gender-percent} and \ref{frequency-vessel-age-percent}
+show a visible relationship between the presence of disease an an increase number of visible major vessels.
+
+It is not clear where the discrepancy between the dataset and the recent studies comes from, but our prediction
+model should still be effective as long as the distribution is simply reversed.
+
 \begin{figure}
     \caption{Distribution of the number of major vessels visible grouping by gender}\label{frequency-vessel-gender-percent}
     \centering
@@ -129,6 +139,10 @@ heart disease.
 
 \subsubsection{Feature: Slope}
 
+This feature represents the shape of the slope at the exercise peak. In figures \ref{frequency-slope-gender-percent}
+and \ref{frequency-slope-agegroup-percent} we can see that there is a relationship between the inclination of the slope
+and the presence of cardiovascular disease. These observations are substantiated by existing research \cite{Fluoroscopy}.
+
 \begin{figure}
     \caption{Distribution of slope classification grouping by gender}\label{frequency-slope-gender-percent}
     \centering
@@ -141,7 +155,16 @@ heart disease.
     \includegraphics[width=\linewidth]{media/frequency-04-agegroup-slope.png}
 \end{figure}
 
+Healthy patients have either an upwards slope or a flat slope, patients with a heart disease are more likely to show
+a downwards slope.
+
+Note that there are a substantial amount of samples that don't have a valid classification value for this feature.
+
 \subsubsection{Feature: Resting electrocardiogram results}
+
+This feature is a classification of the results of a ECG while the patient is at rest. Figures \ref{frequency-ecg-gender-percent}
+and \ref{frequency-ecg-agegroup-percent} show what is already intuitive, an abnormal ECG result correlates with
+the presence of heart conditions across genders and ages.
 
 \begin{figure}
     \caption{Distribution of resting ECG results classification grouping by gender}\label{frequency-ecg-gender-percent}
@@ -155,7 +178,17 @@ heart disease.
     \includegraphics[width=\linewidth]{media/frequency-06-agegroup-ecg.png}
 \end{figure}
 
+There are, nonetheless, a couple of observations worth noting. Firstly, there are patients that are not affected
+by any heart condition, and yet show abnormal or even strong signs of disease in the ECG. Lastly, female patients
+seem to be more likely to show probable signs of disease in the ECG even when they are healthy.
+
 \subsubsection{Feature: Fasting blood sugar}
+
+This feature classifies the levels of blood sugar measured while the patient is fasting. The classification is based
+on a threshold of 120 mg/dl.
+
+Once more, we see certain correlation in figures \ref{frequency-bloodsugar-gender-percent} and
+\ref{frequency-bloodsugar-agegroup-percent}.
 
 \begin{figure}
     \caption{Distribution of blood sugar level classification grouping by gender}\label{frequency-bloodsugar-gender-percent}
@@ -169,7 +202,14 @@ heart disease.
     \includegraphics[width=\linewidth]{media/frequency-08-agegroup-bloodsugar.png}
 \end{figure}
 
+An interesting observation from figure \ref{frequency-bloodsugar-agegroup-percent} is that patients between 40-50 years
+old seem to have less variation in the distribution (above and below the threshold).
+
 \subsubsection{Feature: Chest pain type}
+
+This feature is a classification of the types of pain reported. The analysis shows a correlation between reported
+non-anginal pain and the presence of heart disease (figures \ref{frequency-paintype-gender-percent} and
+\ref{frequency-paintype-agegroup-percent}).
 
 \begin{figure}
     \caption{Distribution of chest pain type classification grouping by gender}\label{frequency-paintype-gender-percent}
@@ -185,6 +225,10 @@ heart disease.
 
 \subsubsection{Feature: Exercise-induced angina}
 
+This feature shows whether the patients suffered from an exercise-induced angina. Figures \ref{frequency-exerciseangina-gender-percent}
+and \ref{frequency-exerciseangina-agegroup-percent} don't show any clear correlation between this feature
+and heart disease.
+
 \begin{figure}
     \caption{Distribution of exercise-induced angina grouping by gender}\label{frequency-exerciseangina-gender-percent}
     \centering
@@ -198,6 +242,8 @@ heart disease.
 \end{figure}
 
 \subsection{Data spread and variability}
+
+In this section we use measures of dispersion to analyse the data spread and variability across each feature.
 
 \subsubsection{Feature: Oldpeak}
 
