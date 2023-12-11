@@ -304,8 +304,17 @@ In this section we use measures of dispersion to analyse the data spread and var
 
 \subsection{Correlation analysis}
 
+In this section we analyse the correlation between features in the dataset. Figure \ref{correlation-matrix}
+is a visual representation of the correlation matrix using a heatmap. In this figure, we can see that there
+are not many clear correlations, in fact the only value above 0.70 is for the relationship between the class
+(i.e. target) and the slope shape (i.e. slope).
+
 \begin{figure}
     \caption{Correlation matrix}\label{correlation-matrix}
     \centering
     \includegraphics[width=\linewidth]{media/correlation-matrix.png}
 \end{figure}
+
+Nonetheless, as we've seen in previous sections, there seems to be a few correlations between some of the
+categorical features and the presence of disease. So although the correlation matrix shows small correlation
+indexes for these features, our prediction model should be able to utilise this information.
