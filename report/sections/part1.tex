@@ -1,0 +1,135 @@
+\section{Part 1 - Data and Analysis Methodologies}
+
+\subsection{Source of Data}
+
+For our research, we selected a dataset containing 1000 records of patients from a multispecialty hospital in India.
+Each record contains the patient ID, age and gender, and 12 other features representing the common observations and
+information taken for patients presenting heart disease symptoms. All records are annotated showing whether the patient
+suffers or not from a heart disease. Table \ref{description-of-features} shows a detail description of all the features
+in the dataset.
+
+\small
+\begin{tabularx}{\linewidth}{ | X | X | X | X |}
+    \caption{Description of features}\label{description-of-features} \\
+    \hline
+    \textbf{Feature} & \textbf{Code} & \textbf{Description} & \textbf{Values} \\
+    \hline
+    Patient ID
+    & patientid
+    & The patient's identification number.
+    & A number.\\
+    \hline
+    Age
+    & age
+    & The age of the patient.
+    & The age in years.\\
+    \hline
+    Gender
+    & gender
+    & The gender of the patient.
+    & 0 (female) or 1 (male).\\
+    \hline
+    Resting blood pressure
+    & restingBP
+    & The blood pressure measured at rest.
+    & 94-200 mm/HG.\\
+    \hline
+    Serum cholesterol
+    & serumcholestrol
+    & The levels of HDL and LDL plus 20\% the levels of triglycerides.
+    & 126-564 mg/dl.\\
+    \hline
+    Fasting blood sugar
+    & fastingbloodsugar
+    & Whether the basal sugar levels are above 120 mg/dl or not.
+    & 0 (no, < 120 mg/dl) or 1 (yes, > 120 mg/dl).\\
+    \hline
+    Chest pain type
+    & chestpain
+    & The type of chest pain reported by the patient.
+    & 0 (typical angina), 1 (atypical angina), 2 (non-anginal pain) or 3 (asymptomatic).\\
+    \hline
+    Resting electrocardiogram results
+    & restingelectro
+    & Classification of the results of an electrocardiogram performed at rest.
+    & 0 (normal), 1 (ST-T wave abnormality), 2 (probable or definite left ventricular hypertrophy).\\
+    \hline
+    Maximum heart rate achieved
+    & maxheartrate
+    & Maximum heart rate registered while performing light exercise.
+    & 71-202 BPM.\\
+    \hline
+    Exercise-induced angina
+    & exerciseangina
+    & Whether the exercise induced an angina.
+    & 0 (no) or 1 (yes).\\
+    \hline
+    Oldpeak
+    & oldpeak
+    & ST depression induced by exercise to rest.
+    & 0-6.2\\
+    \hline
+    Slope
+    & slope
+    & The slope of the peak exercise ST segment.
+    & 1 (upsloping), 2 (flat) or 3 (downsloping).\\
+    \hline
+    Number of major vessels
+    & noofmajorvessels
+    & Major vessels coloured by fluoroscopy.
+    & A count (0-3).\\
+    \hline
+    Classification
+    & target
+    & Whether the patient suffers from a heart disease.
+    & 0 (no) or 1 (yes).\\
+    \hline
+\end{tabularx}
+\normalsize
+
+The dataset is publicly available in Kaggle. \href{https://www.kaggle.com/}{Kaggle} is the largest online platform for data scientists, providing both
+tools and data for scientific analysis, as well as hosting competitions. It is currently the biggest and
+most active online scientific community, with over 15 million users \cite{Kaggle}.
+
+\subsection{Limitations}
+
+We chose this dataset as it contained common features used in research for cardiovascular disease prediction \cite{STSegmentChanges}
+\cite{STSlopePredictor} \cite{STSlopePredictorComparison}. Nonetheless, we recognise that there is not much information available
+about the dataset and how it was collected. The author has good reputation in Kaggle, but without a proper trace for the origin of
+the records, we should be sceptical about the results, particularly about the chosen prediction model.
+We mitigate this limitation by applying our prediction model to a well documented dataset, the heart disease dataset maintained by
+UC Irvine \cite{HeartDiseaseDataset}.
+
+\subsection{Research Objectives and Analysis Methodologies}
+
+In this section, we introduce the research objectives and the selected analysis methodologies applied to the dataset
+to meant these objectives.
+
+This research has a main objective and three "sub-objectives" that help us understand the data we are working with
+and expand our knowledge of the field.
+
+\subsubsection{Main Objective: Generate a prediction model}
+
+The main objective of this report is to generate a prediction model that can accurately label patients with heart disease
+for a set of values for the given features. Having this prediction model would allow medical professionals to automatically
+diagnose patients even helping prevent the development of cardiovascular diseases thanks to early diagnosis.
+
+To generate a prediction model, we will try different well-known classification algorithms, such as K-Nearest Neighbour, 
+Decision Trees, and Random Forest. For each of the evaluated algorithms, we will train the model using the dataset and
+generate accuracy markers for the resulting predictions.
+
+Once we have identified a classification algorithm that yields good predictions (we set the threshold at >95\%), we can
+use it to generate a prediction for different dataset, thus verifying its accuracy and ensuring that we are not over-fitting.
+
+\subsubsection{Sub-objective 1: Understand demographic distribution}
+
+One of the first analysis we must carry out against the dataset is a demographic analysis. We want to understand
+the demographic distribution so that we can identify potential biases (e.g. age bias and gender bias).
+
+It is well known that, in the past, medical studies had a high incidence of gender bias, particularly in cardiovascular
+research \cite{GenderBiasCardiovascularResearch}.
+
+\subsubsection{Sub-objective 2: Identify potential predictors in categorical data}
+
+\subsubsection{Sub-objective 3: Identify potential predictors in numerical data}
+

@@ -1,0 +1,49 @@
+\documentclass[10pt]{report}
+
+% 8-bit encoding and uses fonts that have 256 glyph
+\usepackage[T1]{fontenc}
+% proper URL handling
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{roboto}
+\usepackage{ltablex}
+% To insert graphics in the document
+\usepackage{graphicx}
+% Package to insert the university logo in the title page
+\usepackage{titling}
+
+\title{
+    Analysis and Reporting\\
+    \large Cyber Attacks Dataset
+}
+\author{Alejandro Otero Ortiz de Cosca (K21090108)}
+\date{December 2023}
+
+\pretitle{
+    \begin{center}
+        \includegraphics[width=0.7\linewidth]{./media/kings-college-london.jpg}
+    \end{center}
+}
+\posttitle{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\input{sections/introduction.tex}
+\input{sections/part1.tex}
+\input{sections/part2.tex}
+\input{sections/part3.tex}
+\input{sections/part4.tex}
+
+\appendix
+\input{appendix/source-code.tex}
+
+\bibliography{references}
+\bibliographystyle{IEEEtran}
+
+\end{document}
