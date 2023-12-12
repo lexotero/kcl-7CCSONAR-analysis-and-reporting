@@ -25,7 +25,7 @@ the total number of patients with and without a heart condition.
 \end{tabularx}
 \normalsize
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Number of patients with and without a heart condition}\label{demographics-target-count}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-01-target.png}
@@ -44,7 +44,7 @@ compare to female patients. Table \ref{demographics-gender-percent} shows that t
 only 23\% of the total. This \textbf{could point to a lower incidence of heart-related conditions in the female population},
 but we cannot confirm it without gathering more details about the recruitment strategy for the dataset.
     
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Number of patients of each gender grouped by class}\label{demographics-gender-target-count}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-03-gender-target-count.png}
@@ -70,7 +70,7 @@ model will not tend to disproportionally apply a specific class to a whole gende
 Figure \ref{demographics-gender-target-percent} shows the \textbf{distribution of patients with disease across genders},
 and confirms that indeed the \textbf{distribution is balanced}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of patients of each gender grouped by class}\label{demographics-gender-target-percent}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-04-gender-target-percentage.png}
@@ -84,7 +84,7 @@ gender. Although there are small variations between the female and the male popu
 \textbf{distribution is balanced, there are roughly an equal number of patients across each age group when
 grouping by gender.}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Number of patients of each gender across age groups}\label{demographics-gender-agegroup-count}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-02-gender-age.png}
@@ -100,7 +100,7 @@ Figure \ref{demographics-agegroup-target-percent} shows the distribution of pati
 \textbf{presumably the recruitment criteria ensured that there would be a balanced distribution across genders and ages} for both
 ill and healthy patients.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of patients of each age group grouped by class}\label{demographics-agegroup-target-percent}
     \centering
     \includegraphics[width=\linewidth]{media/demographics-05-agegroup-target-percentage.png}
@@ -125,13 +125,13 @@ show a visible relationship between the presence of disease an an increase numbe
 It is not clear where the discrepancy between the dataset and the recent studies comes from, but our prediction
 model should still be effective as long as the distribution is simply reversed.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of the number of major vessels visible grouping by gender}\label{frequency-vessel-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-01-gender-vessels.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of the number of major vessels visible grouping by age groups}\label{frequency-vessel-age-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-02-agegroup-vessels.png}
@@ -143,13 +143,13 @@ This feature represents the shape of the slope at the exercise peak. In figures 
 and \ref{frequency-slope-agegroup-percent} we can see that there is a relationship between the inclination of the slope
 and the presence of cardiovascular disease. These observations are substantiated by existing research \cite{Fluoroscopy}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of slope classification grouping by gender}\label{frequency-slope-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-03-gender-slope.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of slope classification grouping by age groups}\label{frequency-slope-agegroup-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-04-agegroup-slope.png}
@@ -166,13 +166,13 @@ This feature is a classification of the results of a ECG while the patient is at
 and \ref{frequency-ecg-agegroup-percent} show what is already intuitive, an abnormal ECG result correlates with
 the presence of heart conditions across genders and ages.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of resting ECG results classification grouping by gender}\label{frequency-ecg-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-05-gender-ecg.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of resting ECG results classification grouping by age groups}\label{frequency-ecg-agegroup-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-06-agegroup-ecg.png}
@@ -190,13 +190,13 @@ on a threshold of 120 mg/dl.
 Once more, we see certain correlation in figures \ref{frequency-bloodsugar-gender-percent} and
 \ref{frequency-bloodsugar-agegroup-percent}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of blood sugar level classification grouping by gender}\label{frequency-bloodsugar-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-07-gender-bloodsugar.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of blood sugar level classification grouping by age groups}\label{frequency-bloodsugar-agegroup-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-08-agegroup-bloodsugar.png}
@@ -211,13 +211,13 @@ This feature is a classification of the types of pain reported. The analysis sho
 non-anginal pain and the presence of heart disease (figures \ref{frequency-paintype-gender-percent} and
 \ref{frequency-paintype-agegroup-percent}).
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of chest pain type classification grouping by gender}\label{frequency-paintype-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-09-gender-paintype.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of chest pain type classification grouping by age groups}\label{frequency-paintype-agegroup-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-10-agegroup-paintype.png}
@@ -229,13 +229,13 @@ This feature shows whether the patients suffered from an exercise-induced angina
 and \ref{frequency-exerciseangina-agegroup-percent} don't show any clear correlation between this feature
 and heart disease.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of exercise-induced angina grouping by gender}\label{frequency-exerciseangina-gender-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-11-gender-exerciseangina.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Distribution of exercise-induced angina grouping by age groups}\label{frequency-exerciseangina-agegroup-percent}
     \centering
     \includegraphics[width=\linewidth]{media/frequency-12-agegroup-exerciseangina.png}
@@ -247,13 +247,13 @@ In this section we use measures of dispersion to analyse the data spread and var
 
 \subsubsection{Feature: Oldpeak}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for oldpeak grouping by age and gender}\label{boxplot-oldpeak-age}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-01-agegroup-gender-oldpeak.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for oldpeak grouping by gender}\label{boxplot-oldpeak-gender}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-02-gender-oldpeak.png}
@@ -261,13 +261,13 @@ In this section we use measures of dispersion to analyse the data spread and var
 
 \subsubsection{Feature: Maximum heart rate achieved}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for maximum resting heart rate grouping by age and gender}\label{boxplot-heartrate-age}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-03-agegroup-gender-heartrate.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for maximum resting heart rate grouping by gender}\label{boxplot-heartrate-gender}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-04-gender-heartrate.png}
@@ -275,13 +275,13 @@ In this section we use measures of dispersion to analyse the data spread and var
 
 \subsubsection{Feature: Serum cholesterol}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for serum cholesterol grouping by age and gender}\label{boxplot-cholesterol-age}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-05-agegroup-gender-cholesterol.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for serum cholesterol grouping by gender}\label{boxplot-cholesterol-gender}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-06-gender-cholesterol.png}
@@ -289,13 +289,13 @@ In this section we use measures of dispersion to analyse the data spread and var
 
 \subsubsection{Feature: Resting blood pressure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for resting blood pressure grouping by age and gender}\label{boxplot-bp-age}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-07-agegroup-gender-bp.png}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Measures of dispersion for resting blood pressure grouping by gender}\label{boxplot-bp-gender}
     \centering
     \includegraphics[width=\linewidth]{media/boxplot-08-gender-bp.png}
@@ -309,7 +309,7 @@ is a visual representation of the correlation matrix using a heatmap. In this fi
 are not many clear correlations, in fact the only value above 0.70 is for the relationship between the class
 (i.e. target) and the slope shape (i.e. slope).
 
-\begin{figure}[h]
+\begin{figure}[H]
     \caption{Correlation matrix}\label{correlation-matrix}
     \centering
     \includegraphics[width=\linewidth]{media/correlation-matrix.png}
